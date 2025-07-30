@@ -1,0 +1,15 @@
+@startuml
+actor UserApp as UA
+participant "DeviceManager" as DM
+participant "CharDriverOps (spi0_ops)" as Ops
+
+UA -> DM : write("/dev/spi0", data, len)
+activate DM
+
+DM -> DM : DevFileEntry * dev = lookup("/dev/spi0");
+DM -> Ops : dev->ops->write(data, len);
+Ops --> DM : bytes_written
+DM --> UA : bytes_written
+deactivate DM
+@enduml
+
