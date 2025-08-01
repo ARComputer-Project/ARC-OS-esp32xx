@@ -5,7 +5,7 @@
   "idf.openOcdConfigs": [
     "board/esp32s3-builtin.cfg"
   ],
-  "idf.port": "/dev/ttyS0",
+  "idf.port": "/dev/ttyUSB0",
   "idf.toolsPath": "/home/alex/.espressif",
   "idf.customExtraVars": {
     "IDF_TARGET": "esp32s3"
@@ -22,5 +22,6 @@
     "ostream": "c",
     "sstream": "c",
     "streambuf": "c"
-}
+},
+"idf.flashType": "UART"
 }
