@@ -41,9 +41,16 @@ void register_mock_driver() {
 }
 
 void app_main(void) {
+
+    printf("init!");
     register_mock_driver();
+
 
     int fd = open("/dev/spi0", O_WRONLY);
     write(fd, "ping from userland", 19);
     close(fd);
+
+    int fd2 = open("/dev/spi1", O_RDWR);
+    write(fd2, "ping from userland2", 20);
+    close(fd2);
 }
