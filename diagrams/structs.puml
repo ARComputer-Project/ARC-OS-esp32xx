@@ -1,0 +1,39 @@
+@startuml
+
+
+enum DriverType {
+  DEV_CHAR
+  DEV_BLOCK
+  DEV_NET
+  DEV_MOUNT
+}
+
+
+class DevFileEntry {
+  - path: const char*
+  - type: DriverType
+  - ops: void*
+  - priv: void*
+}
+
+
+class CharDriverOps <<interface>> {
+  + open()
+  + read(buf, len)
+  + write(buf, len)
+  + close()
+}
+
+
+class spi_ctx_t {
+  - port: int
+  - regs: void*
+  ...
+}
+
+
+DevFileEntry --> CharDriverOps : ops : CharDriverOps*
+DevFileEntry --> spi_ctx_t : priv : spi_ctx_t*
+
+@enduml
+

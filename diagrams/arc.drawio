@@ -1,0 +1,231 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.7">
+  <diagram name="Page-1" id="c2_da3jYEsj6eeD2P2dS">
+    <mxGraphModel dx="1113" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-1" value="Anarchist&#39;s (Autonomous) Radio Computer" style="swimlane;startSize=20;horizontal=1;containerType=tree;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" parent="1" vertex="1">
+          <mxGeometry x="40" y="50" width="420" height="220" as="geometry">
+            <mxRectangle x="70" y="80" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-2" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;" parent="jRK0xmPNMJ4y_IXUovJc-1" source="jRK0xmPNMJ4y_IXUovJc-4" target="jRK0xmPNMJ4y_IXUovJc-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-3" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;" parent="jRK0xmPNMJ4y_IXUovJc-1" source="jRK0xmPNMJ4y_IXUovJc-4" target="jRK0xmPNMJ4y_IXUovJc-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ARC-Phone" treeRoot="1" id="jRK0xmPNMJ4y_IXUovJc-4">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" parent="jRK0xmPNMJ4y_IXUovJc-1" vertex="1">
+            <mxGeometry x="150" y="40" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-5" value="ARC Operating system" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" parent="jRK0xmPNMJ4y_IXUovJc-1" vertex="1">
+          <mxGeometry x="20" y="140" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-6" value="ARC-Network&lt;div&gt;(ARC-Net)&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" parent="jRK0xmPNMJ4y_IXUovJc-1" vertex="1">
+          <mxGeometry x="160" y="140" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-8" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;startArrow=none;endArrow=none;" parent="jRK0xmPNMJ4y_IXUovJc-1" source="jRK0xmPNMJ4y_IXUovJc-4" target="jRK0xmPNMJ4y_IXUovJc-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ARC Android compatibility server&amp;nbsp;" treeRoot="1" id="jRK0xmPNMJ4y_IXUovJc-9">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};dashed=1;" parent="jRK0xmPNMJ4y_IXUovJc-1" vertex="1">
+            <mxGeometry x="300" y="140" width="100" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-9" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="10" y="560" width="650" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-32" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF0000);dashed=1;dashPattern=8 8;" parent="NOwLSaS7YS9r0mc01nkY-9" vertex="1">
+          <mxGeometry x="185" width="120" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-28" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF0000);" parent="NOwLSaS7YS9r0mc01nkY-9" vertex="1">
+          <mxGeometry x="310" width="340" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-16" value="App" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="NOwLSaS7YS9r0mc01nkY-9" vertex="1">
+          <mxGeometry y="60" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-17" value="read(&quot;/dev/spi1&quot;, &amp;amp;dat, 64);" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" parent="NOwLSaS7YS9r0mc01nkY-9" edge="1">
+          <mxGeometry x="0.0667" width="60" relative="1" as="geometry">
+            <mxPoint x="40" y="100" as="sourcePoint" />
+            <mxPoint x="190" y="100" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-20" value="&lt;div&gt;Syscall interface (Lua lib, C lib etc.)&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;" parent="NOwLSaS7YS9r0mc01nkY-9" vertex="1">
+          <mxGeometry x="190" y="70" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-22" value="syscall(SYS_READ, &quot;/dev/spi1&quot;, &amp;amp;dat, 64);" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" parent="NOwLSaS7YS9r0mc01nkY-9" edge="1">
+          <mxGeometry x="0.0435" width="60" relative="1" as="geometry">
+            <mxPoint x="300" y="99.75999999999999" as="sourcePoint" />
+            <mxPoint x="530" y="100" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="NOwLSaS7YS9r0mc01nkY-9" source="jRK0xmPNMJ4y_IXUovJc-23" target="jRK0xmPNMJ4y_IXUovJc-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-23" value="Syscall table" style="html=1;whiteSpace=wrap;" parent="NOwLSaS7YS9r0mc01nkY-9" vertex="1">
+          <mxGeometry x="530" y="70" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="NOwLSaS7YS9r0mc01nkY-9" source="jRK0xmPNMJ4y_IXUovJc-24" target="jRK0xmPNMJ4y_IXUovJc-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-24" value="Driver (SPI)" style="html=1;whiteSpace=wrap;" parent="NOwLSaS7YS9r0mc01nkY-9" vertex="1">
+          <mxGeometry x="370" y="250" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-25" value="Hardware" style="html=1;whiteSpace=wrap;" parent="NOwLSaS7YS9r0mc01nkY-9" vertex="1">
+          <mxGeometry x="370" y="370" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-31" value="OS Kernel" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=light-dark(#000000,#FF0000);" parent="NOwLSaS7YS9r0mc01nkY-9" vertex="1">
+          <mxGeometry x="370" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-33" value="Interpreter/Compiler,&lt;div&gt;for pseudo-POSIX&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=light-dark(#000000,#FF0000);" parent="NOwLSaS7YS9r0mc01nkY-9" vertex="1">
+          <mxGeometry x="180" y="10" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="NOwLSaS7YS9r0mc01nkY-9" source="jRK0xmPNMJ4y_IXUovJc-34" target="jRK0xmPNMJ4y_IXUovJc-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-34" value="Device table" style="html=1;whiteSpace=wrap;" parent="NOwLSaS7YS9r0mc01nkY-9" vertex="1">
+          <mxGeometry x="530" y="210" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-2" value="sys_read(&quot;/dev/spi1&quot;, &amp;amp;dat, 64);" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-9">
+          <mxGeometry x="390" y="150" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-4" value="spi1.read(&amp;amp;dat, 64);" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-9">
+          <mxGeometry x="460" y="300" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-10" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="70" y="340" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-10" value="App" style="swimlane;startSize=30;swimlaneLine=1;" parent="NOwLSaS7YS9r0mc01nkY-10" vertex="1">
+          <mxGeometry width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-11" value="syscall table" style="swimlane;startSize=30;" parent="NOwLSaS7YS9r0mc01nkY-10" vertex="1">
+          <mxGeometry y="30" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-12" value="OS Kernel" style="swimlane;startSize=30;" parent="jRK0xmPNMJ4y_IXUovJc-11" vertex="1">
+          <mxGeometry y="30" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-13" value="FreeRTOS (kernel of OS kernel)" style="swimlane;startSize=30;" parent="jRK0xmPNMJ4y_IXUovJc-12" vertex="1">
+          <mxGeometry y="30" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jRK0xmPNMJ4y_IXUovJc-15" value="Hardware Driver" style="swimlane;" parent="jRK0xmPNMJ4y_IXUovJc-13" vertex="1">
+          <mxGeometry y="30" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-11" value="ARC Operating system" style="swimlane;startSize=20;horizontal=1;childLayout=treeLayout;horizontalTree=0;sortEdges=1;resizable=0;containerType=tree;fontSize=12;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1040" width="1005" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-12" value="OS Repo" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="430" y="40" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-13" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Main OS Kernel code" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="45" y="130" width="100" height="58.5" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-14" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" parent="NOwLSaS7YS9r0mc01nkY-11" source="NOwLSaS7YS9r0mc01nkY-12" target="NOwLSaS7YS9r0mc01nkY-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-15" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;OS Kernel components" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="255" y="130" width="100" height="58.5" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-16" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" parent="NOwLSaS7YS9r0mc01nkY-11" source="NOwLSaS7YS9r0mc01nkY-12" target="NOwLSaS7YS9r0mc01nkY-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-20" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" target="NOwLSaS7YS9r0mc01nkY-21" source="NOwLSaS7YS9r0mc01nkY-12" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-835" y="1120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-21" value="OS Drivers" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="535" y="130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-26" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" target="NOwLSaS7YS9r0mc01nkY-27" source="NOwLSaS7YS9r0mc01nkY-12" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-527" y="1120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-27" value="Apps" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="815" y="130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-28" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" target="NOwLSaS7YS9r0mc01nkY-29" source="NOwLSaS7YS9r0mc01nkY-27" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-351" y="1120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-29" value="&lt;div&gt;apps/&lt;/div&gt;System (compiled with kernel, privileged)&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="745" y="220" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-30" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" target="NOwLSaS7YS9r0mc01nkY-31" source="NOwLSaS7YS9r0mc01nkY-27" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-141" y="1210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-31" value="External apps&amp;nbsp;&lt;div&gt;(Lua or cross-compiled C, apps stored in flash. Executed in userspace)&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="885" y="220" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-32" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" target="NOwLSaS7YS9r0mc01nkY-33" source="NOwLSaS7YS9r0mc01nkY-21" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-113" y="1120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-33" value="&lt;div&gt;libs/&lt;/div&gt;System library with heavy stuff like ML, crypto, mesh. Acts like a driver" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="465" y="220" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-34" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" target="NOwLSaS7YS9r0mc01nkY-35" source="NOwLSaS7YS9r0mc01nkY-21" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-78" y="1210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-35" value="&lt;div&gt;drivers/&lt;/div&gt;Hardware drivers(control buses, keyboards, displays etc.)" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="605" y="220" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-36" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" target="NOwLSaS7YS9r0mc01nkY-37" source="NOwLSaS7YS9r0mc01nkY-13" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="195" y="1120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-37" value="main/main.cpp" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="45" y="238.5" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-38" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" target="NOwLSaS7YS9r0mc01nkY-39" source="NOwLSaS7YS9r0mc01nkY-15" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="195" y="1120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-39" value="&lt;div&gt;components/&lt;/div&gt;isr.c&lt;div&gt;semaphores.c&lt;/div&gt;&lt;div&gt;queues.c&lt;/div&gt;&lt;div&gt;etc.&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="185" y="238.5" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-41" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" target="NOwLSaS7YS9r0mc01nkY-42" source="NOwLSaS7YS9r0mc01nkY-15" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="1229" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-42" value="boardfiles/&lt;div&gt;board.h&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="325" y="238.5" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-43" value="Note: For OS kernel we use C++ or C, but for drivers C is prefferable (if it&#39;s possible to implement in short terms).&amp;nbsp;&lt;div&gt;Assembly is also possible but primarly for ULP co-proc and drivers optimization.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-11">
+          <mxGeometry x="20" y="330" width="660" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-44" value="ARC-OS v0.1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1510" width="730" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-49" value="Shell (user&#39;s terminal app) + basic set of UNIX-like terminal apps and commands." style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-44">
+          <mxGeometry y="30" width="730" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-48" value="Support of MESH radio comms and MESH Internet dongle mode (drivers + libs + app)" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-44">
+          <mxGeometry y="60" width="730" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-46" value="UART as input/output (and maybe simple OLED output support)" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-44">
+          <mxGeometry y="90" width="730" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-45" value="Lua interpreter runtime + syscall table and descriptor to support apps development" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-44">
+          <mxGeometry y="120" width="730" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NOwLSaS7YS9r0mc01nkY-47" value="File manipulations, drivers, small internal filesystem (without SDcard).&amp;nbsp;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NOwLSaS7YS9r0mc01nkY-44">
+          <mxGeometry y="150" width="730" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

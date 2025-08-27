@@ -1,0 +1,57 @@
+@startuml
+interface CharDriverOps {
+  +open()
+  +read(buf, len)
+  +write(buf, len)
+  +ioctl(cmd, arg)
+  +close()
+}
+
+interface BlockDriverOps {
+  +open()
+  +read_sector(sector, buf)
+  +write_sector(sector, buf)
+  +sync()
+  +close()
+}
+
+interface NetDriverOps {
+  +open()
+  +send_packet(buf, len)
+  +recv_packet(buf, max_len)
+  +ioctl(cmd, arg)
+  +close()
+}
+
+interface MountDriverOps {
+  +open()
+  +close()
+}
+
+class DeviceManager {
+  +register(path, type, ops, priv)
+  +open(path)
+  +read(path, buf, len)
+  +write(path, buf, len)
+  +ioctl(path, cmd, arg)
+  +close(path)
+}
+
+class DevFileEntry {
+  -path: const char *
+  -type: DriverType
+  -ops: void*
+  -priv: void*
+}
+
+DeviceManager --> "0..*" DevFileEntry
+
+enum DriverType {
+  DEV_CHAR
+  DEV_BLOCK
+  DEV_NET
+  DEV_MOUNT
+}
+
+@enduml
+
