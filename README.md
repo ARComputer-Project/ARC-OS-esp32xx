@@ -46,6 +46,8 @@ General example of communication between App and spi driver. More detailed view 
 
 # --- FOR KERNEL DEVELOPERS ---
 
+Note: ioctl(); is not provided by the vfs library. arc_ioctl(); should be implemented and used as the default. Default ioctl() works only for lwIP library(TCP/IP stack).
+
 In progress
 
 # --- FOR APP DEVELOPERS ---
