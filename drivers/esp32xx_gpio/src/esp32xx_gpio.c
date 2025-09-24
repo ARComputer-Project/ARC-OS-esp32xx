@@ -3,15 +3,6 @@
 #include <stdbool.h>
 #include <stdatomic.h>
 
-// ESP-IDF includes
-#include "driver/gpio.h"
-#include "esp_timer.h"
-#include "esp_intr_alloc.h"
-#include "esp_attr.h"
-
-// Maximum number of events in the per-pin ring buffer
-#define GPIO_EVQ_CAP 32
-
 #define GPIO_DRIVER_DEBUG
 #ifdef GPIO_DRIVER_DEBUG
 #include "esp_log.h"
@@ -25,22 +16,6 @@
 #define ESP_LOGV //
 
 #endif
-
-//(TODO: move it to the .h)
-/**
- * @brief Internal context structure for each GPIO device instance
- */
-typedef struct {
-    int pin;
-    atomic_int dir;        // 0 = input, 1 = output
-    atomic_int pull;       // 0 = none, 1 = pull-up, 2 = pull-down
-    atomic_int irq_edge;   // 0 = none, 1 = rising, 2 = falling, 3 = both
-    atomic_int irq_en;     // 0 = disabled, 1 = enabled
-
-    gpio_event_t evq[GPIO_EVQ_CAP]; // ring buffer for GPIO edge events
-    atomic_uint  head;              // ISR producer index
-    atomic_uint  tail;              // read consumer index
-} gpio_ctx_t;
 
 /**
  * @brief Apply current pull-up/down setting to the hardware
@@ -219,29 +194,14 @@ void gpio_driver_global_init(void)
     }
 }
 
-
 /**
  * @brief VFS driver function table
  */
-static const DevFileOps gpio_ops = {
+const DevFileOps gpio_ops = {
     .read  = gpio_read,
     .write = gpio_write,
     .ioctl = gpio_ioctl,
     .open  = gpio_open,
     .close = gpio_close,
-};
-
-// ======= Code above should be in the kernel ====== 
-
-// Static GPIO contexts for demo (GPIO2, GPIO35)
-static gpio_ctx_t gpio0_ctx = { .pin = 2 };
-static gpio_ctx_t gpio1_ctx = { .pin = 35 };
-
-/**
- * @brief GPIO device table entries to be registered with the VFS
- */
-DevFileEntry devtab_gpio[] = {
-    { .path="/gpio2", .driver_type=DRIVER_CHR, .ops=&gpio_ops, .priv=&gpio0_ctx, .fixed_fd=0 },
-    { .path="/gpio4", .driver_type=DRIVER_CHR, .ops=&gpio_ops, .priv=&gpio1_ctx, .fixed_fd=1 },
 };
 

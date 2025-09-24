@@ -3,7 +3,17 @@
 
 #include <stdint.h>
 #include <sys/types.h>  
-#include <stddef.h>     
+#include <stddef.h> 
+#include <stdatomic.h>
+
+#include "driver/gpio.h"
+#include "esp_timer.h"
+#include "esp_intr_alloc.h"
+#include "esp_attr.h"
+
+
+// Maximum number of events in the per-pin ring buffer
+#define GPIO_EVQ_CAP 32
 
 
 /* Compatibility with C++ code */
@@ -11,6 +21,7 @@
 extern "C" {
 #endif
 
+// ---- NOT THE DRIVER CODE, MOVE TO KERNEL (TODO) ----
 typedef uint8_t driver_type_t;
 
 enum 
@@ -39,6 +50,8 @@ typedef struct DevFileEntry
     int16_t fixed_fd;
 } DevFileEntry;
 
+//      ---- END OF NON-DRIVER CODE ----
+
 
 // ---- GPIO API (ioctl) ----
 enum {
@@ -64,7 +77,26 @@ typedef struct {
 } gpio_event_t;
 
 /**
- *  Kernel init functions
+ * @brief Internal context structure for each GPIO device instance
+ */
+typedef struct {
+    int pin;
+    atomic_int dir;        // 0 = input, 1 = output
+    atomic_int pull;       // 0 = none, 1 = pull-up, 2 = pull-down
+    atomic_int irq_edge;   // 0 = none, 1 = rising, 2 = falling, 3 = both
+    atomic_int irq_en;     // 0 = disabled, 1 = enabled
+
+    gpio_event_t evq[GPIO_EVQ_CAP]; // ring buffer for GPIO edge events
+    atomic_uint  head;              // ISR producer index
+    atomic_uint  tail;              // read consumer index
+} gpio_ctx_t;
+
+
+
+extern const DevFileOps gpio_ops;
+
+/**
+ *  Driver init function
  */
 
 extern void gpio_driver_global_init(void);

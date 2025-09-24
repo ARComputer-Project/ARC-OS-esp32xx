@@ -1,0 +1,1 @@
+# Directory for the target build configs (board pinouts, driver structures etc.)

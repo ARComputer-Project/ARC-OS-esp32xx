@@ -20,10 +20,7 @@
 #include "esp32xx_gpio.h"
 
 #include "driver/gpio.h"
-
-// EXTERNAL
-extern const DevFileEntry devtab_gpio[];
-extern const DevFileOps gpio_ops;
+#include "target.h"
 
 #define DEV_COUNT 2
 
@@ -55,13 +52,13 @@ static int arc_open(const char *path, int flags, int mode)
     ESP_LOGI("vfs", "OPEN called: %s", path);
     for (int i = 0; i < DEV_COUNT; i++) 
     {
-        if (strcmp(path, devtab_gpio[i].path) == 0) 
+        if (strcmp(path, devtab[i].path) == 0) 
         {
             for (int fd = 0; fd < MY_VFS_MAX_FD; fd++) 
             {
                 if (fd_table[fd] == NULL)
                 {
-                    fd_table[fd] = (DevFileEntry *)&devtab_gpio[i]; // remove const-cast if possible
+                    fd_table[fd] = (DevFileEntry *)&devtab[i]; // remove const-cast if possible
                     int final_fd = MY_VFS_BASE_FD + fd;
                     ESP_LOGI("MAIN", "Device found. path: %s → fd: %d", path, final_fd);
                     return fd;
@@ -72,7 +69,7 @@ static int arc_open(const char *path, int flags, int mode)
         } 
         else 
         {
-            ESP_LOGW("vfs", "Skipping non-matching dev: %s", devtab_gpio[i].path);
+            ESP_LOGW("vfs", "Skipping non-matching dev: %s", devtab[i].path);
         }
     }
     ESP_LOGE("vfs", "Device not found: %s", path);
@@ -82,19 +79,19 @@ static int arc_open(const char *path, int flags, int mode)
 static ssize_t arc_read(int fd, void *buf, size_t len) 
 {
     const DevFileEntry *dev = find_dev_by_fd(fd);
-    return dev->ops->read(devtab_gpio[fd].priv, buf, len);
+    return dev->ops->read(devtab[fd].priv, buf, len);
 }
 
 static ssize_t arc_write(int fd, const void *buf, size_t len) 
 {
     const DevFileEntry *dev = find_dev_by_fd(fd);
-    return dev->ops->write(devtab_gpio[fd].priv, buf, len);
+    return dev->ops->write(devtab[fd].priv, buf, len);
 }
 
 static int arc_close(int fd) 
 {
     const DevFileEntry *dev = find_dev_by_fd(fd);
-    return dev->ops->close(devtab_gpio[fd].priv);
+    return dev->ops->close(devtab[fd].priv);
 }
 
 // ---- Register custom VFS with ioctl passthrough ----
