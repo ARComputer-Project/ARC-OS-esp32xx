@@ -7,6 +7,7 @@
 #include <stdatomic.h>
 
 #include "driver/gpio.h"
+#include "device/device.h"
 #include "esp_timer.h"
 #include "esp_intr_alloc.h"
 #include "esp_attr.h"
@@ -15,43 +16,10 @@
 // Maximum number of events in the per-pin ring buffer
 #define GPIO_EVQ_CAP 32
 
-
 /* Compatibility with C++ code */
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-// ---- NOT THE DRIVER CODE, MOVE TO KERNEL (TODO) ----
-typedef uint8_t driver_type_t;
-
-enum 
-{
-    DRIVER_CHR = 0x0,
-    DRIVER_NET,
-    DRIVER_BLK,
-    DRIVER_MNT,
-};
-
-
-typedef struct DevFileOps{
-    ssize_t (*read)(void *priv, void *buf, size_t count);
-    ssize_t (*write)(void *priv, const void *buf, size_t count);
-    int     (*ioctl)(void *priv, int request, void *arg);
-    int     (*open)(void *priv);
-    int     (*close)(void *priv);
-} DevFileOps;
-
-typedef struct DevFileEntry 
-{
-    const char * path;
-    driver_type_t driver_type;
-    const DevFileOps * ops;
-    void * priv;
-    int16_t fixed_fd;
-} DevFileEntry;
-
-//      ---- END OF NON-DRIVER CODE ----
-
 
 // ---- GPIO API (ioctl) ----
 enum {

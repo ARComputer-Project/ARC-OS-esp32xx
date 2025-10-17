@@ -4,7 +4,8 @@ cmake_minimum_required(VERSION 3.5)
 # ==Include driver directories here==
 # ===================================
 # Example: set(EXTRA_COMPONENT_DIRS ./drivers/<your_driver>)
-set(EXTRA_COMPONENT_DIRS ./drivers/esp32xx_gpio
+set(EXTRA_COMPONENT_DIRS ./kernel
+                         ./drivers/esp32xx_gpio
                          ./targets/test_diy)
 # ===================================
 
