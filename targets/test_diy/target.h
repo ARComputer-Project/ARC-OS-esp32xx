@@ -7,11 +7,10 @@
 extern "C" {
 #endif
 
-extern gpio_ctx_t gpio0_ctx;
-extern gpio_ctx_t gpio1_ctx;
-
-extern DevFileEntry devtab[];
-
+/**
+ * @brief Initializes and registers all devices for this specific target board.
+ */
+void target_init(void);
 
 #ifdef __cplusplus
 }

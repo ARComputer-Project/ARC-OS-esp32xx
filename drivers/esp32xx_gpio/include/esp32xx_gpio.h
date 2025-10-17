@@ -4,6 +4,7 @@
 #include <stdatomic.h>
 
 #include "driver/gpio.h"
+#include "device/device.h"
 #include "esp_timer.h"
 #include "esp_intr_alloc.h"
 #include "esp_attr.h"
@@ -13,7 +14,6 @@
 
 // Maximum number of events in the per-pin ring buffer
 #define GPIO_EVQ_CAP 32
-
 
 /* Compatibility with C++ code */
 #ifdef __cplusplus

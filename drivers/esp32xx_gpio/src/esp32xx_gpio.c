@@ -122,7 +122,7 @@ static ssize_t gpio_write(void *priv, const void *buf, size_t count)
     uint8_t level = ((const uint8_t*)buf)[0] ? 1 : 0;
     ESP_LOGI("gpio driver", "Setting level: %u", level);
     gpio_set_level(c->pin, level);
-    return 10; //for test only // return 1;  
+    return 1; //for test only // return 1;  
 }
 
 /**

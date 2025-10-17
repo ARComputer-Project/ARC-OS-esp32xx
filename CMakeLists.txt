@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
 
-
 set(DRIVERS ./drivers/esp32xx_gpio
 	    ./drivers/esp32xx_hwspi)
 
