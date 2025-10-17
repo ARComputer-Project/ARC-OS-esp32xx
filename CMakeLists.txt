@@ -1,12 +1,16 @@
 cmake_minimum_required(VERSION 3.5)
 
-# ===================================
-# ==Include driver directories here==
-# ===================================
-# Example: set(EXTRA_COMPONENT_DIRS ./drivers/<your_driver>)
-set(EXTRA_COMPONENT_DIRS ./drivers/esp32xx_gpio
-                         ./targets/test_diy)
-# ===================================
+
+set(DRIVERS ./drivers/esp32xx_gpio
+	    ./drivers/esp32xx_hwspi)
+
+set(KERNEL_MODULES ./kernel/driver_structs)
+
+set(TARGET_DIR ./targets/test_diy)
+
+set(EXTRA_COMPONENT_DIRS ${DRIVERS}
+			 ${KERNEL_MODULES}
+			 ${TARGET_DIR})
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(ARC-OS-esp32xx)
