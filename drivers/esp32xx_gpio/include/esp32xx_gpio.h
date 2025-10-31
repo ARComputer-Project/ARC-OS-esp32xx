@@ -63,7 +63,7 @@ typedef struct {
 extern const DevFileOps gpio_ops;
 
 /**
- *  Driver init function
+ *  ISR init function
  */
 
 extern void gpio_driver_global_init(void);

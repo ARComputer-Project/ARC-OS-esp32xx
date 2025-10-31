@@ -184,6 +184,8 @@ static int gpio_ioctl(void *priv, int req, void *arg)
 
 /**
  * @brief One-time global initialization of GPIO ISR service
+ * This is global, so only first driver needs to install ISR's
+ * @note This should be called only in the kernel space, on boot
  */
 void gpio_driver_global_init(void)
 {

@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.5)
 set(DRIVERS ./drivers/esp32xx_gpio
 	    ./drivers/esp32xx_hwspi)
 
-set(KERNEL_MODULES ./kernel/driver_structs)
+set(KERNEL_MODULES ./kernel/)
 
 set(TARGET_DIR ./targets/test_diy)
 
