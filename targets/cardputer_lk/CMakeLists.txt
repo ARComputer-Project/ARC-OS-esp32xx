@@ -1,5 +1,5 @@
 idf_component_register(
     SRCS "target.c"
-    REQUIRES esp32xx_gpio_pposix driver
+    REQUIRES driver
     INCLUDE_DIRS "."
 )
