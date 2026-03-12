@@ -4,10 +4,11 @@ option(LITE_KERNEL "Disable Pseudo-POSIX fetures" ON)
 
 if(LITE_KERNEL)
     add_compile_definitions(LITE_KERNEL=1)
-    set(DRIVERS "")
-    set(KERNEL  "")
 
-    # insert here your litekernel target
+    set(APPS "./apps/shell")
+    set(DRIVERS "")
+    set(KERNEL_MODULES  "./kernel/fs_internal")
+    # insert here your LiteKernel target
     set(TARGET_DIR ./targets/cardputer_lk)
 else()
     add_compile_definitions(LITE_KERNEL=0)
@@ -21,7 +22,7 @@ else()
 endif()
 
 
-set(EXTRA_COMPONENT_DIRS ${DRIVERS} ${KERNEL_MODULES} ${TARGET_DIR})
+set(EXTRA_COMPONENT_DIRS ${APPS} ${DRIVERS} ${KERNEL_MODULES} ${TARGET_DIR})
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(ARC-OS-esp32xx)
